@@ -1,3 +1,11 @@
+let cnv;
+
+function centerCanvas() {
+  let x = (windowWidth - width) / 2;
+  let y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+}
+
 function setup() {
   title = createElement('h2', "<a href='/PoeticCodeForNature'> HOME : </a> 작품 제목");
   title.position(20, 0);
@@ -5,6 +13,7 @@ function setup() {
   canvas = createCanvas(300, 300);
   canvas.position(windowWidth/2, windowHeight/2);
   canvas.class("artwork");
+  centerCanvas();
 
   description = "\
   작품에 대한 설명이 들어갑니다. <br/> \
