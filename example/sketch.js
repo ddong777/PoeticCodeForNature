@@ -3,7 +3,7 @@ function setup() {
   title.position(20, 0);
 
   canvas = createCanvas(300, 300);
-  canvas.position(20, 60);
+  canvas.position(window.width/2, window.height/2);
   canvas.class("artwork");
 
   description = "\
@@ -11,7 +11,7 @@ function setup() {
   HTML이 직접 들어가서 줄넘김을 할 수 있습니다. \
   ";
   text = createDiv(description);
-  text.position(20, 400);
+  text.position(canvas.width + 20, canvas.height + 20);
   text.style("font-family", "monospace");
   text.style("font-size", "12pt");
 
