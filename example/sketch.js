@@ -1,9 +1,9 @@
-let cnv;
+let canvas;
 
 function centerCanvas() {
   let x = (windowWidth - width) / 2;
   let y = (windowHeight - height) / 2;
-  cnv.position(x, y);
+  canvas.position(x, y);
 }
 
 function setup() {
@@ -11,7 +11,6 @@ function setup() {
   title.position(20, 0);
 
   canvas = createCanvas(300, 300);
-  canvas.position(windowWidth/2, windowHeight/2);
   canvas.class("artwork");
   centerCanvas();
 
