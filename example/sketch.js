@@ -21,7 +21,7 @@ function setup() {
   ";
 
   text = createDiv(description);
-  text.position(x + 20, y);
+  text.position(x + width, y);
   text.style("font-family", "monospace");
   text.style("font-size", "12pt");
 
