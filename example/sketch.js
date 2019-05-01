@@ -15,10 +15,10 @@ function setup() {
   text.style("font-family", "monospace");
   text.style("font-size", "12pt");
 
+  background(0);
 }
 
 function draw() {
-  background(0);
   fill(255);
-  ellipse(width/2, height/2, 50);
+  ellipse(mouseX, mouseY, 50);
 }
