@@ -3,7 +3,7 @@ function setup() {
   title.position(20, 0);
 
   canvas = createCanvas(300, 300);
-  canvas.position(window.width/2, window.height/2);
+  canvas.position(windowWidth/2, windowHeight/2);
   canvas.class("artwork");
 
   description = "\
