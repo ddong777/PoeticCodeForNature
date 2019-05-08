@@ -12,12 +12,12 @@
 
   * 그림을 그리는 것도 좋아하고, 보는 것도 좋아합니다.
   * 좋아하는 화가
-  - [Claude Monet](./monet.jpg)
-  - [Bato Dugarzhapov](./dugarzhapov.jpg)
+  - ![Claude Monet](./monet.jpg)
+  - ![Bato Dugarzhapov](./dugarzhapov.jpg)
 
   * 생물도 좋아합니다.
   * 바이오 아트를 접한 이후로 생명과 관련된 작업에 관심이 생기게 되었습니다.
-  - [Eduardo Kac, 창세기, 1999](./kac.png)
+  - ![Eduardo Kac, 창세기, 1999](./kac.png)
   * 그래서 요즘은 코딩으로 (개념적인) 인공생명체를 만들어보는 작업을 하고 있습니다.
 
 
