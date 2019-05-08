@@ -1,14 +1,19 @@
 ## 시작하기
 
 접속 주소 : <http://ddong777.github.io/PoeticCodeForNature/>
- * picxenk 대신 여러분의 아이디로 변경합니다.
- * \_config.yml 파일에서 url 값을 여러분에게 맞게 수정하세요.
+
  * 원한다면 테마를 변경할 수 있습니다. <https://pages.github.com/themes/> 페이지를 참고합니다.
 
 
-## 이름
-  * 최승희
+## 최승희
+   ![대표이미지](./titleImage.png)
 
+  * 좋아하는게 많은 것 같아요.
+
+  * 그림을 그리는 것도 좋아하고, 보는 것도 좋아합니다.
+  * 좋아하는 화가
+  - ![Claude Monet](./monet.jpg)
+  - ![Bato Dugarzhapov](./dugarzhapov.jpg)
 
 ## 작업
  * [예시 작업](./example/)
