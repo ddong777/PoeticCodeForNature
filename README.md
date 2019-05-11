@@ -31,11 +31,9 @@
 
 
 ## 작업
- * [예시 작업](./example/)
- * [테스트](./test0501/)
-
  * [수업 작업1](./10print_test_0313_2)
  * [수업 작업2](./noise_test0325_2)
  * [수업 작업3](./worm0415)
  * [수업 작업4](./spread0415)
  * [수업 작업5](./tentacleGenerator0415)
+ * [수업 작업6](./tentacleGenerator0417)
