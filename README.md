@@ -10,8 +10,8 @@
 
   * 좋아하는게 많은 것 같아요.
 
-  그림을 그리는 것도 좋아하고, 보는 것도 좋아합니다.
-  <좋아하는 화가>
+  * 그림을 그리는 것도 좋아하고, 보는 것도 좋아합니다.
+  * 좋아하는 화가
   - Claude Monet
   - ![Claude Monet](./img/monet.jpg)
   - Bato Dugarzhapov
