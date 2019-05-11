@@ -11,7 +11,7 @@ function centerCanvas() {
 }
 
 function setup() {
-  title = createElement('h2', "<a href='/PoeticCodeForNature'> HOME : </a> 10 print practice");
+  title = createElement('h2', "<a href='/PoeticCodeForNature'> HOME : </a> particleSystem practice");
   title.position(20, 0);
 
   canvas = createCanvas(900, 900);

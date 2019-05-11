@@ -10,7 +10,7 @@ function centerCanvas() {
 }
 
 function setup() {
-  title = createElement('h2', "<a href='/PoeticCodeForNature'> HOME : </a> 10 print practice");
+  title = createElement('h2', "<a href='/PoeticCodeForNature'> HOME : </a> tentacle");
   title.position(20, 0);
 
   canvas = createCanvas(700, 500);
