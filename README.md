@@ -42,7 +42,15 @@
  * [수업 작업8_box2D](./box2D_exercise0515/NOC_5_02_Boxes_myGit0515_ddong777)
 
 ## 기말 작업
-  * 주제 : 식물
+  * 주제1 : 식물
   - 소스 이미지
   ![grow](./img/grow.png)
-* [grass](./grass_0531)
+  - 아이디어 스케치
+  ![grow](./img/idea1.jpg)
+ * [grass](./grass_0531)
+
+ * 주제2 : 다세포 생물
+ - 소스 이미지 : 없음
+ - 아이디어 스케치
+ ![grow](./img/idea2.jpg)
+* (코드 추가 예정)
