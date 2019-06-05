@@ -32,13 +32,13 @@
 ---------------------------------------
 
 ## 작업
- * [수업 작업1](./10print_test_0313_2)
- * [수업 작업2](./noise_test0325_2)
- * [수업 작업3](./worm0415)
- * [수업 작업4](./spread0415)
- * [수업 작업5](./tentacleGenerator0415)
- * [수업 작업6](./tentacleGenerator0417)
- * [수업 작업7](./plant0512)
+ * [수업 작업1_10print](./10print_test_0313_2)
+ * [수업 작업2_noise](./noise_test0325_2)
+ * [수업 작업3_worm](./worm0415)
+ * [수업 작업4_spread](./spread0415)
+ * [수업 작업5_tentacle](./tentacleGenerator0415)
+ * [수업 작업6_temtacle2](./tentacleGenerator0417)
+ * [수업 작업7_plant](./plant0512)
  * [수업 작업8_box2D](./box2D_exercise0515)
 
 ## 기말 작업
