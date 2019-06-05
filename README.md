@@ -39,7 +39,7 @@
  * [수업 작업5_tentacle](./tentacleGenerator0415)
  * [수업 작업6_temtacle2](./tentacleGenerator0417)
  * [수업 작업7_plant](./plant0512)
- * [수업 작업8_box2D](./box2D_exercise0515\NOC_5_02_Boxes_myGit0515_ddong777)
+ * [수업 작업8_box2D](./box2D_exercise0515/NOC_5_02_Boxes_myGit0515_ddong777)
 
 ## 기말 작업
   * 주제 : 식물
