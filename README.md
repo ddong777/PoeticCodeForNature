@@ -27,7 +27,6 @@
   - CELL2018
 ![CELL2018](./img/cell.PNG)
   - Image Decomposition
-![imageDecomposition, cell2018_190512_2](./img/imgDcp2.png)
 ![imageDecomposition, food_0531](./img/food.png)
 
 ---------------------------------------
@@ -46,4 +45,4 @@
   * 주제 : 식물
   - 소스 이미지
   ![grow](./img/grow.png)
-  [grass](./grass_0531)
+* [grass](./grass_0531)
