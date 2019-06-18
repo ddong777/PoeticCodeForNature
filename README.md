@@ -50,7 +50,7 @@
   ![grow](./img/grow.png)
   - 아이디어 스케치
   ![grow](./img/idea1.jpg)
- * [grass](./grass_0531)
+ * [작업 중인 코드 : grass](./grass_0531)
 
  * 주제2 : 다세포 생물
  - 소스 이미지 : 없음
