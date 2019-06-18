@@ -20,7 +20,7 @@
 
 
 * 생물
-  바이오 아트를 접한 이후로 생명과 관련된 작업에 관심이 생기게 되었습니다.
+  * 바이오 아트를 접한 이후로 생명과 관련된 작업에 관심이 생기게 되었습니다.
   - *Eduardo Kac*, 창세기, 1999
   ![Eduardo Kac, 창세기, 1999](./img/kac.png)
   생명과 미디어작업을 연결할 수 있을까 해서 알게된 것이 computational generative art와 artificial life art 였습니다.
