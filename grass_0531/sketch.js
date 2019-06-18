@@ -10,7 +10,7 @@ function centerCanvas() {
 
 function setup() {
   title = createElement('h2', "<a href='/PoeticCodeForNature'> HOME : </a> grass(임시제목)");
-  title.position(20, 0);
+  title.position(windowWidth/2, 0);
 
   canvas = createCanvas(1000, 800);
   canvas.class("artwork");
