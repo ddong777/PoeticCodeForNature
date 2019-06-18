@@ -18,6 +18,8 @@ function setup() {
   canvas.class("artwork");
   centerCanvas();
 
+  background(0);
+
   branchNum = random(100);
   for (let i = 0; i < branchNum; i++) {
     grs[i] = new grass(width/2, height/2);
@@ -27,7 +29,6 @@ function setup() {
 }
 
 function draw() {
-  background(0, 5);
   let attractorMouse = createVector(mouseX, mouseY);
 
   for (let i = 0; i < grs.length; i++) {
@@ -43,14 +44,15 @@ function draw() {
   }
 
   if (lightOn == true){
-    noStroke();
-    fill(255, 80);
-    ellipse(mouseX, mouseY, random(20, 70), random(20, 70));
+    noFill();
+    stroke(255, 30);
+    let lightSize = random(30, 100);
+    ellipse(mouseX, mouseY, lightSize, lightSize);
   }
 }
 
 function mousePressed() {
-  grs.push(new grass(mouseX, mouseY));
+  // grs.push(new grass(mouseX, mouseY));
 
   if (lightOn == true){
     lightOn = false;
