@@ -30,8 +30,6 @@ function setup() {
 function draw() {
   let lightMouse = createVector(mouseX, mouseY);
 
-  plants.push(new divergence(mouseX, mouseY));
-
   for(let i = 0; i < plants.length; i++){
     plants[i].update(lightMouse);
     plants[i].display();
@@ -47,7 +45,9 @@ function draw() {
 }
 
 function mousePressed() {
-  // branches.push(new branch(mouseX, mouseY));
+  // if (plants.length < 100){
+  //   plants.push(new divergence(mouseX, mouseY));
+  // }
 
   if (lightOn == true){
     lightOn = false;
