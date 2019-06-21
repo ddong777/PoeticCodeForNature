@@ -35,18 +35,15 @@ function draw() {
     grs[i].update();
     grs[i].display();
     if (lightOn == true){
-      grs[i].followLight(attractorMouse);
-    }
-
-    if (grs[i].die){
-      grs.splice(i, 1);
+      grs[i].seekLight(attractorMouse);
     }
   }
 
   if (lightOn == true){
     noFill();
     stroke(255, 30);
-    let lightSize = random(30, 100);
+    strokeWeight(2);
+    let lightSize = random(0, 100);
     ellipse(mouseX, mouseY, lightSize, lightSize);
   }
 }
