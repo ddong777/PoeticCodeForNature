@@ -22,7 +22,7 @@ class grass {
   }
 
   update() {
-    this.applyForce(p5.Vector.random2D(3));
+    this.applyForce(p5.Vector.random2D(1));
 
     this.vel.add(this.acc);
     this.steering.limit(this.maxForce);
