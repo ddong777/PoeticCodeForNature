@@ -20,7 +20,7 @@ function setup() {
 
   background(0);
 
-  branchNum = random(100);
+  branchNum = random(5, 20);
   for (let i = 0; i < branchNum; i++) {
     grs[i] = new grass(width/2, height/2);
   }
