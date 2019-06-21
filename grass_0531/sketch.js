@@ -1,6 +1,6 @@
 let canvas;
 let x, y;
-let grs = [];
+let branches = [];
 let branchNum;
 let lightOn;
 
@@ -11,7 +11,7 @@ function centerCanvas() {
 }
 
 function setup() {
-  title = createElement('h2', "<a href='/PoeticCodeForNature'> HOME : </a> grass(임시제목)");
+  title = createElement('h2', "<a href='/PoeticCodeForNature'> HOME : </a> branch(임시제목)");
   title.position(windowWidth/2, 0);
 
   canvas = createCanvas(1000, 800);
@@ -22,7 +22,7 @@ function setup() {
 
   branchNum = random(5, 20);
   for (let i = 0; i < branchNum; i++) {
-    grs[i] = new grass(width/2, height/2);
+    branches[i] = new branch(width/2, height/2);
   }
 
   lightOn = false;
@@ -31,11 +31,11 @@ function setup() {
 function draw() {
   let attractorMouse = createVector(mouseX, mouseY);
 
-  for (let i = 0; i < grs.length; i++) {
-    grs[i].update();
-    grs[i].display();
+  for (let i = 0; i < branches.length; i++) {
+    branches[i].update();
+    branches[i].display();
     if (lightOn == true){
-      grs[i].seekLight(attractorMouse);
+      branches[i].seekLight(attractorMouse);
     }
   }
 
@@ -49,7 +49,7 @@ function draw() {
 }
 
 function mousePressed() {
-  // grs.push(new grass(mouseX, mouseY));
+  // branches.push(new branch(mouseX, mouseY));
 
   if (lightOn == true){
     lightOn = false;
