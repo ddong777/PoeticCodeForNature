@@ -4,67 +4,53 @@ class grass {
     this.vel = createVector(0, 0);
     this.acc = createVector(0, 0);
 
+    this.desired = createVector(0, 0);
+    this.steering = createVector(0, 0);
+
+    this.maxSpeed = 2;
+    this.maxForce = 0.5;
+
     this.density = 100;
+    this.r = 10;
 
-    this.growTime = random(50, 70);
-    this.lifeTime = random(500, 600);
-    this.die = false;
-
-    this.r = 0;
-    this.growUP = 0;
-    this.startR = random(5, 10);
-    this.middleR = random(30, 40);
-    this.endR = 0;
+    this.growSpeed = createVector(0, 0);
+    this.growWeight = 0;
   }
 
-  addForce(force){
+  applyForce(force){
     this.acc.add(force);
   }
 
   update() {
-    this.addForce(p5.Vector.random2D());
-
-    this.acc.setMag(0.1);
+    this.applyForce(p5.Vector.random2D(3));
 
     this.vel.add(this.acc);
+    this.steering.limit(this.maxForce);
+    this.vel.limit(this.maxForce);
+
     this.pos.add(this.vel);
-
-    this.growTime -= 0.1;
-    this.r += this.growUP;
-
-    this.growPhase1();
-    this.lifespan();
   }
 
-  followLight(attractor){
-    let followingForce = p5.Vector.sub(attractor, this.pos);
-    followingForce.setMag(0.3);
-    this.addForce(followingForce);
+  seekLight(target){
+    this.desired = p5.Vector.sub(target, this.pos);
+
+    this.d = this.desired.mag();
+    if (this.d < 80){
+      this.m = map(this.d, 0, 100, 0, this.maxSpeed);
+      this.desired.setMag(this.m);
+    } else if (this.d > 200){
+      this.desired.set(0, 0);
+    } else {
+      this.desired.setMag(this.maxSpeed);
+    }
+
+    this.steering = p5.Vector.sub(this.desired, this.vel);
+    this.applyForce(this.steering);
   }
 
   display() {
     stroke(0, this.density);
     fill(255, this.density);
-    ellipse(this.pos.x, this.pos.y, 10);
-  }
-
-  growPhase1() {
-    if (this.r <= this.startR) {
-      this.growUP = 0;
-    } else {
-      this.growUP = 0.1;
-    }
-  }
-
-  lifespan(){
-    this.lifeTime --;
-    if (lightOn){
-      this.lifeTime += 0.5;
-    }
-    if (this.lifeTime <= 0){
-      this.die = true;
-    } else {
-      this.die = false;
-    }
+    ellipse(this.pos.x, this.pos.y, this.r);
   }
 }
