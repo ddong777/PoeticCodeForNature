@@ -1,8 +1,7 @@
 let canvas;
 let x, y;
-let branches = [];
-let branchNum;
 let lightOn;
+let plants = [];
 
 function centerCanvas() {
   x = (windowWidth - width) / 2;
@@ -11,32 +10,31 @@ function centerCanvas() {
 }
 
 function setup() {
-  title = createElement('h2', "<a href='/PoeticCodeForNature'> HOME : </a> branch(임시제목)");
+  title = createElement('h2', "<a href='/PoeticCodeForNature'> HOME : </a> growing plant");
   title.position(windowWidth/2, 0);
 
   canvas = createCanvas(1000, 800);
   canvas.class("artwork");
   centerCanvas();
 
+  //========================================================
   background(0);
 
-  branchNum = random(5, 20);
-  for (let i = 0; i < branchNum; i++) {
-    branches[i] = new branch(width/2, height/2);
-  }
-
+  //========================================================
   lightOn = false;
+
+  //========================================================
+  plants.push(new divergence(width/2, height/2));
 }
 
 function draw() {
-  let attractorMouse = createVector(mouseX, mouseY);
+  let lightMouse = createVector(mouseX, mouseY);
 
-  for (let i = 0; i < branches.length; i++) {
-    branches[i].update();
-    branches[i].display();
-    if (lightOn == true){
-      branches[i].seekLight(attractorMouse);
-    }
+  plants.push(new divergence(mouseX, mouseY));
+
+  for(let i = 0; i < plants.length; i++){
+    plants[i].update(lightMouse);
+    plants[i].display();
   }
 
   if (lightOn == true){
