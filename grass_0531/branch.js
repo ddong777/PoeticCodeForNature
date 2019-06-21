@@ -6,6 +6,7 @@ class branch {
 
     this.desired = createVector(0, 0);
     this.steering = createVector(0, 0);
+    this.d = createVector(0, 0);
 
     this.maxSpeed = 2;
     this.maxForce = 0.5;
@@ -13,6 +14,7 @@ class branch {
     this.density = 100;
     this.r = 10;
 
+    this.energy = 50;
     this.growSpeed = createVector(0, 0);
     this.growWeight = 0;
   }
@@ -39,7 +41,7 @@ class branch {
       this.m = map(this.d, 0, 100, 0, this.maxSpeed);
       this.desired.setMag(this.m);
     } else if (this.d > 200){
-      this.desired.set(0, 0);
+      this.applyForce(p5.Vector.random2D(1));
     } else {
       this.desired.setMag(this.maxSpeed);
     }
@@ -48,9 +50,24 @@ class branch {
     this.applyForce(this.steering);
   }
 
+  growing(){
+    if (this.d < 200){
+      this.energy += random(-0.7, 0.7);
+    } else {
+      this.energy -= 0.1;
+    }
+
+    if (this.energy <= 0.05){
+      this.energy = 0;
+      strokeWeight(0);
+    }
+  }
+
   display() {
+    this.growing();
+
     stroke(0, this.density);
     fill(255, this.density);
-    ellipse(this.pos.x, this.pos.y, this.r);
+    ellipse(this.pos.x, this.pos.y, this.energy);
   }
 }

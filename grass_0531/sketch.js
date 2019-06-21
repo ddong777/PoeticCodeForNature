@@ -37,9 +37,9 @@ function draw() {
 
   if (lightOn == true){
     noFill();
-    stroke(255, 30);
+    stroke(170, 30);
     strokeWeight(2);
-    let lightSize = random(0, 100);
+    let lightSize = random(0, 400);
     ellipse(mouseX, mouseY, lightSize, lightSize);
   }
 }
