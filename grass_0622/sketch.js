@@ -1,6 +1,5 @@
 let canvas;
 let x, y;
-let lightOn;
 let plants = [];
 
 function centerCanvas() {
@@ -10,48 +9,32 @@ function centerCanvas() {
 }
 
 function setup() {
-  title = createElement('h2', "<a href='/PoeticCodeForNature'> HOME : </a> growing plant");
-  title.position(windowWidth/2, 0);
+  title = createElement('h1', "</a> 1. roots explosion.");
+  title.position(windowWidth/2 - 100, 0);
 
-  canvas = createCanvas(1000, 800);
+  canvas = createCanvas(windowWidth*0.8, windowHeight*0.9);
   canvas.class("artwork");
   centerCanvas();
 
   //========================================================
-  background(0);
-
-  //========================================================
-  lightOn = false;
+  background(255);
 
   //========================================================
   plants.push(new divergence(width/2, height/2));
 }
 
 function draw() {
-  let lightMouse = createVector(mouseX, mouseY);
-
   for(let i = 0; i < plants.length; i++){
-    plants[i].update(lightMouse);
+    plants[i].update();
     plants[i].display();
-  }
 
-  if (lightOn == true){
-    noFill();
-    stroke(170, 30);
-    strokeWeight(2);
-    let lightSize = random(0, 400);
-    ellipse(mouseX, mouseY, lightSize, lightSize);
+    if (plants[i].divergenceBang == true && plants.length < 150){
+      plants.push(new divergence(plants[i].seed.x, plants[i].seed.y));
+      plants[i].divergenceBang = false;
+    }
   }
 }
 
 function mousePressed() {
-  // if (plants.length < 100){
-  //   plants.push(new divergence(mouseX, mouseY));
-  // }
-
-  if (lightOn == true){
-    lightOn = false;
-  } else if (lightOn == false) {
-    lightOn = true;
-  }
+  save("rootsExplosion.png");
 }
