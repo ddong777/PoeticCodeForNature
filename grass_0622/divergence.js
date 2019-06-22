@@ -16,9 +16,7 @@ class divergence {
       this.branches[i].display();
 
       if (this.branches[i].makeDivergence == true){
-        if (random() < 0.3){
-          this.divergenceBang = true;
-        }
+        this.divergenceBang = true;
         this.seed = this.branches[i].pos;
         this.branches.splice(1,i);
       } else{
