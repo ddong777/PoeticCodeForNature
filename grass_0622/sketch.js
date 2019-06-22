@@ -10,7 +10,7 @@ function centerCanvas() {
 
 function setup() {
   title = createElement('h1', "</a> 1. roots explosion.");
-  title.position(windowWidth/2 - 100, 0);
+  title.position(windowWidth/2 - 200, 0);
 
   canvas = createCanvas(windowWidth*0.8, windowHeight*0.9);
   canvas.class("artwork");
