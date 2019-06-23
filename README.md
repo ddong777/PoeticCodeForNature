@@ -1,5 +1,3 @@
-## 시작하기
-
 접속 주소 : <http://ddong777.github.io/PoeticCodeForNature/>
 
 ---------------------------------------
@@ -8,12 +6,12 @@
   - 이메일 : dj0603521@gmail.com
   - 인스타
     - 개인 : [@dj060352](https://www.instagram.com/dj060352/)
-    - 팀 : STUDIO Silicagel [@studio_silicagel](https://www.instagram.com/studio_silicagel/?hl=ko)
+    - 팀 : STUDIO Silicagel [@studio_silicagel](https://www.instagram.com/studio_silicagel/)
 
    ![대표이미지](./img/img_decom.jpg)
 
 ---------------------------------------
-# 나와 관련된 것
+## 나와 관련된 것
 
 * 그림
   * 좋아하는 스타일
@@ -32,7 +30,7 @@
   엉성하지만 코딩으로 (개념적인)인공적인 생명체를 만들어보는 작업을 해보고 있습니다.
 
 ---------------------------------------
-# 작업들
+## 개인 작업들
   - CELL2018
 ![CELL2018](./img/cell.PNG)
   - Image Decomposition
