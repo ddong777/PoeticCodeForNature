@@ -7,8 +7,8 @@
 # 최승희
   - 이메일 : dj0603521@gmail.com
   - 인스타
-    - 개인 : @dj060352
-    - 팀 : STUDIO Silicagel @studio_silicagel
+    - 개인 : [@dj060352](https://www.instagram.com/dj060352/)
+    - 팀 : STUDIO Silicagel [@studio_silicagel](https://www.instagram.com/studio_silicagel/?hl=ko)
 
    ![대표이미지](./img/img_decom.jpg)
 
