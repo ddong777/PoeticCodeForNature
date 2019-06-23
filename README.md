@@ -9,11 +9,11 @@
   - 인스타
     - 개인 : @dj060352
     - 팀 : STUDIO Silicagel @studio_silicagel
-    
+
    ![대표이미지](./img/img_decom.jpg)
 
 ---------------------------------------
-* 나와 관련된 것
+# 나와 관련된 것
 
 * 그림
   * 좋아하는 스타일
@@ -30,6 +30,9 @@
   ![Eduardo Kac, 창세기, 1999](./img/kac.png)
   생명과 미디어작업을 연결할 수 있을까 해서 알게된 것이 computational generative art와 artificial life art 였습니다.
   엉성하지만 코딩으로 (개념적인)인공적인 생명체를 만들어보는 작업을 해보고 있습니다.
+
+---------------------------------------
+# 작업들
   - CELL2018
 ![CELL2018](./img/cell.PNG)
   - Image Decomposition
@@ -37,7 +40,7 @@
 
 ---------------------------------------
 
-## 작업
+## 작업(수업)
  * [수업 작업1_10print](./10print_test_0313_2)
  * [수업 작업2_noise](./noise_test0325_2)
  * [수업 작업3_worm](./worm0415)
