@@ -72,4 +72,4 @@
  - 소스 이미지 : 없음
  - 아이디어 스케치
  ![grow](./img/idea2.jpg)
-* (코드 추가 예정)
+* [실행 코드 : multcellular](./group_autoAgents_0624)
