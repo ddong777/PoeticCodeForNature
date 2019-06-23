@@ -69,7 +69,6 @@
  * [실행 코드 : roots explosion](./roots_0622)
 
  * 2 : 다세포 생물
- - 소스 이미지 : 없음
  - 아이디어 스케치
  ![grow](./img/idea2.jpg)
 * [실행 코드 : multcellular](./group_autoAgents_0624)
