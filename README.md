@@ -48,6 +48,7 @@
   * 1 : 식물
   - 소스 이미지
   ![grow](./img/grow.png)
+  ![tentacles](./img/tentacles.png)
   - 아이디어 스케치
   ![grow](./img/idea1.jpg)
  - 몇세대를 걸쳐 계속 되는 식물의 생성적인면(분화하는 것)을 표현해보고자 함!
