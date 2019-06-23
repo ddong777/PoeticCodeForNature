@@ -19,7 +19,7 @@ function setup() {
   centerCanvas();
 
   // background(0);
-  cellNum = random(10, 30);
+  cellNum = random(5, 10);
   for (let i = 0; i < cellNum; i++){
     cells[i] = new cell(random(width), random(height));
   }
@@ -28,7 +28,7 @@ function setup() {
 function draw() {
   for(let i = 0; i < cells.length; i++){
     for (let j = 0; j < cells.length-1; j++){
-      cells[i].seek(createVector(cells[j].pos.x, cells[j].pos.y));
+      cells[i].applyBehaviors(cells);
       cells[i].update();
       cells[i].display();
     }

@@ -4,14 +4,28 @@ class cell{
     this.vel = createVector(0, 0);
     this.acc = createVector(0, 0);
 
-    this.size = random(80, 110);
+    this.startSize = random(80, 110);
+    this.size = random(10, 30);
 
     this.maxSpeed = random(0.3, 2);
     this.maxForce = 1;
+
+    this.desiredSeperation = random(this.size, this.size*2);
   }
 
   applyForce(force){
     this.acc.add(force);
+  }
+
+  applyBehaviors(other){
+    this.separateForce = this.seperate(other);
+    this.seekForce = this.seek(createVector(mouseX, mouseY));
+
+    // this.separateForce.mult(1);
+    // this.seekForce.mult(1);
+
+    this.applyForce(this.separateForce);
+    this.applyForce(this.seekForce);
   }
 
   seek(target){
@@ -27,17 +41,39 @@ class cell{
 
     this.steering = p5.Vector.sub(this.desired, this.vel);
     this.steering.limit(this.maxForce);
-    this.applyForce(this.steering);
+    return this.steering;
   }
 
-  seperate(target){
+  seperate(other){
+    this.sum = createVector(0, 0);
+    this.count = 0;
 
+    for (let i = 0; i < other.length; i++){
+      this.d = p5.Vector.dist(this.pos, other[i].pos);
+      if ((this.d > 0) && (this.d < this.desiredSeperation)){
+        this.diff = p5.Vector.sub(this.pos, other[i].pos);
+        this.diff.normalize();
+        this.diff.div(this.d);
+        this.sum.add(this.diff);
+        this.count++;
+      }
+    }
+
+    if (this.count > 0){
+      this.sum.div(this.count);
+      this.sum.normalize();
+      this.sum.mult(this.maxSpeed);
+
+      this.steer = p5.Vector.sub(this.sum, this.vel);
+      this.steer.limit(this.maxForce);
+      return this.steer;
+    }
   }
 
   update(){
-    this.randomMove = p5.Vector.random2D();
-    this.randomMove.setMag(0.2);
-    
+    // this.randomMove = p5.Vector.random2D();
+    // this.randomMove.setMag(0.05);
+
     this.applyForce(this.randomMove);
     this.vel.limit(this.maxForce);
 
@@ -49,12 +85,12 @@ class cell{
   display(){
     stroke(0, 0, random(200, 255), 50);
     fill(255, 10);
-    if (this.size < random(30, 50)){
-      this.size -= 0;
+    if (this.startSize < this.size){
+      this.startSize -= 0;
     } else {
-      this.size -= 0.3;
+      this.startSize -= 0.3;
     }
 
-    ellipse(this.pos.x, this.pos.y, this.size);
+    ellipse(this.pos.x, this.pos.y, this.startSize);
   }
 }
