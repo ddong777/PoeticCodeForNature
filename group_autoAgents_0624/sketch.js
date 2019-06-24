@@ -46,7 +46,7 @@ function draw() {
   // print(head.pos.x);
   push();
   fill(255);
-  title = createElement('h2', "</a> multicellular");
+  title = createElement('h2', "</a> 2.multicellular");
   title.position(windowWidth/2 - 80, 0);
   pop();
 }
