@@ -18,23 +18,21 @@ class branch {
     this.vel.add(this.acc);
     this.pos.add(this.vel);
 
-    this.edge();
-
     this.acc.set(0, 0);
   }
 
   growing(){
     if (this.energy <= 70 && this.energy > 5){
-      this.energy += random(-0.9, 0.5);
+      this.energy += random(-1, 0.5);
     } else if (this.energy > 70){
       this.energy -= 5;
     } else if (this.energy >= -70) {
-      this.energy += random(-0.5, 0.9);
+      this.energy += random(-0.5, 1);
     } else if (this.energy < -70){
       this.energy += 5;
     }
 
-    if (this.energy < 5.1 && this.energy > 5 ){
+    if (this.energy < 3.3 && this.energy > 3.2 ){
       this.makeDivergence = true;
     } else {
       this.makeDivergence = false;
@@ -49,13 +47,13 @@ class branch {
   }
 
   edge(){
-    if(this.pos.x >= width){
+    if(this.pos.x >= width*1.5){
       this.pos.x -= 0.5;
-    } else if (this.pos.x <= 0){
+    } else if (this.pos.x <= -width/2){
       this.pos.x += 0.5;
-    } else if(this.pos.y >= height){
+    } else if(this.pos.y >= height*1.5){
       this.pos.y -= 0.5;
-    } else if (this.pos.y <= 0){
+    } else if (this.pos.y <= -height/2){
       this.pos.y += 0.5;
     }
   }
