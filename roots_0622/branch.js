@@ -17,6 +17,10 @@ class branch {
     this.acc.setMag(0.07);
     this.vel.add(this.acc);
     this.pos.add(this.vel);
+
+    this.edge();
+    
+    this.acc.set(0, 0);
   }
 
   growing(){
@@ -42,5 +46,17 @@ class branch {
     stroke(50, 100);
     fill(255, 100);
     ellipse(this.pos.x, this.pos.y, this.energy);
+  }
+
+  edge(){
+    if(this.pos.x >= width){
+      this.pos.x -= 0.5;
+    } else if (this.pos.x <= 0){
+      this.pos.x += 0.5;
+    } else if(this.pos.y >= height){
+      this.pos.y -= 0.5;
+    } else if (this.pos.y <= 0){
+      this.pos.y += 0.5;
+    }
   }
 }
