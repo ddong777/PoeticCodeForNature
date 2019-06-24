@@ -30,7 +30,7 @@ class branch {
       this.energy += 5;
     }
 
-    if (this.energy < 3.1 && this.energy > 3 ){
+    if (this.energy < 5.1 && this.energy > 5 ){
       this.makeDivergence = true;
     } else {
       this.makeDivergence = false;
