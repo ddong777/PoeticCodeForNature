@@ -74,5 +74,7 @@
 
  * 최종 결과물 - Cohesion Before Explosion
 
- ![roots explosion](./img/cohesion.gif)
+ ![cohesion](./img/cohesion.gif)
+ - 원래는 머리하나에 그것을 따라다니는 여러 몸을 이루는 부분들을 만들려 했던 작업인데 하다보니 모이는 물체 사이들의 관계에 더 집중하게 되서 주제를 바꾸었습니다.
+ - 물체들이 하나의 점을 향해 모여드는 것이 꼭 폭발하기 전에 모여드는 모습같아 제목을 '폭발 전 응집'이라고 지어봤습니다.. autonomous agent 중 seek과 separate를 이용했는데 거기에 random2D 움직임을 섞어서 아예 분리 되어있던 것들이 모여들면서 만드는 이미지가 흥미로운것 같습니다.
 * [실행 코드 : cohesion before explosion](./group_autoAgents_0624)
