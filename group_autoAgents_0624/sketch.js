@@ -13,9 +13,6 @@ function centerCanvas() {
 }
 
 function setup() {
-  title = createElement('h2', "</a> multicellular");
-  title.position(windowWidth/2 - 80, 0);
-
   canvas = createCanvas(windowWidth*0.8, windowWidth*0.8);
   canvas.class("artwork");
   centerCanvas();
@@ -47,6 +44,9 @@ function draw() {
 
   head.display();
   // print(head.pos.x);
+  
+  title = createElement('h2', "</a> multicellular");
+  title.position(windowWidth/2 - 80, 0);
 }
 
 function mousePressed(){
