@@ -10,7 +10,7 @@ class cell{
     this.maxSpeed = random(1, 2);
     this.maxForce = 3;
 
-    this.desiredSeperation = this.size*5;
+    this.desiredSeperation = 50;
   }
 
   applyForce(force){
@@ -32,7 +32,7 @@ class cell{
     this.desired = p5.Vector.sub(target, this.pos);
 
     this.d = this.desired.mag();
-    if (this.d < 100){
+    if (this.d < 50){
       this.m = map(this.d, 0, 100, 0, this.maxSpeed);
       this.desired.setMag(this.m);
     } else{

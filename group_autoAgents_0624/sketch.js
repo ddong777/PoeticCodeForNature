@@ -25,7 +25,7 @@ function setup() {
 
   head = new headCell(width/2, height/2);
 
-  cellNum = random(5);
+  cellNum = random(100);
   for (let i = 0; i < cellNum; i++){
     cells[i] = new cell(random(width), random(height));
   }
@@ -41,10 +41,14 @@ function draw() {
     cells[i].display();
   }
 
-  if (random() < 0.01 && cells.length < 7){
+  if (random() < 0.01 && cells.length < 150){
     cells.push(new cell(random(width), random(height)));
   }
 
   head.display();
   // print(head.pos.x);
+}
+
+function mousePressed(){
+  save("flower.png")
 }
