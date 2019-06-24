@@ -44,9 +44,11 @@ function draw() {
 
   head.display();
   // print(head.pos.x);
-  
+  push();
+  fill(255);
   title = createElement('h2', "</a> multicellular");
   title.position(windowWidth/2 - 80, 0);
+  pop();
 }
 
 function mousePressed(){
