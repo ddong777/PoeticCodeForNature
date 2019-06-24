@@ -4,22 +4,22 @@ class cell{
     this.vel = createVector(0, 0);
     this.acc = createVector(0, 0);
 
-    this.startSize = random(80, 110);
-    this.size = random(10, 30);
+    this.startSize = random();
+    this.size = random(2, 20);
 
-    this.maxSpeed = random(0.3, 2);
-    this.maxForce = 1;
+    this.maxSpeed = random(1, 2);
+    this.maxForce = 3;
 
-    this.desiredSeperation = random(this.size, this.size*2);
+    this.desiredSeperation = this.size*5;
   }
 
   applyForce(force){
     this.acc.add(force);
   }
 
-  applyBehaviors(other){
+  applyBehaviors(other, head){
     this.separateForce = this.seperate(other);
-    this.seekForce = this.seek(createVector(mouseX, mouseY));
+    this.seekForce = this.seek(head);
 
     // this.separateForce.mult(1);
     // this.seekForce.mult(1);
@@ -71,8 +71,8 @@ class cell{
   }
 
   update(){
-    // this.randomMove = p5.Vector.random2D();
-    // this.randomMove.setMag(0.05);
+    this.randomMove = p5.Vector.random2D();
+    this.randomMove.setMag(0.1);
 
     this.applyForce(this.randomMove);
     this.vel.limit(this.maxForce);
@@ -83,14 +83,19 @@ class cell{
   }
 
   display(){
-    stroke(0, 0, random(200, 255), 50);
+    stroke(50, 100);
     fill(255, 10);
-    if (this.startSize < this.size){
+    if (this.startSize > this.size){
       this.startSize -= 0;
     } else {
-      this.startSize -= 0.3;
+      this.startSize += 0.3;
     }
 
-    ellipse(this.pos.x, this.pos.y, this.startSize);
+    push();
+    stroke(255, 50);
+    line(this.pos.x, this.pos.y, head.pos.x, head.pos.y);
+    pop();
+
+    rect(this.pos.x, this.pos.y, this.startSize + random(), this.startSize + random());
   }
 }
