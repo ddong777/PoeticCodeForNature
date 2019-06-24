@@ -68,7 +68,11 @@
 
  * [실행 코드 : roots explosion](./roots_0622)
 
- * 2 : 다세포 생물
+ * 2 : 폭발 전 응집
  - 아이디어 스케치
  ![grow](./img/idea2.jpg)
-* [실행 코드 : multcellular](./group_autoAgents_0624)
+
+ * 최종 결과물 - Cohesion Before Explosion
+
+ ![roots explosion](./img/cohesion.gif)
+* [실행 코드 : cohesion before explosion](./group_autoAgents_0624)
