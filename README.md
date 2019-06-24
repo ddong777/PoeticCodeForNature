@@ -81,11 +81,11 @@
 
  * 3 : 원자 행성
  - 아이디어 스케치
- ![grow](./img/3.png)
+ ![atom](./img/3.png)
 
- * 최종 결과물 - Cohesion Before Explosion
+ * 최종 결과물 - atom
 
- ![cohesion](./img/cohesion.gif)
- -
- - 
- * [실행 코드 : cohesion before explosion](./atom_0625)
+ ![atom](./img/atom.gif)
+ - 원래는 주위를 빙글빙글 도는 형태로 하려고 했으나 왔다 갔다하는것도 주변을 돌아다니는 전자 같이 보여서 그대로 사용하기로 했습니다.
+ - 일정한 값을 정해주면 모든 전자의 운동 간격이 같아져서 그것이 또 원을 그리는 점이 좀더 의도하던 이미지를 만들게 해준 것 같습니다.
+ * [실행 코드 : atom](./atom_0625)

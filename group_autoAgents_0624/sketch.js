@@ -13,7 +13,7 @@ function centerCanvas() {
 }
 
 function setup() {
-  canvas = createCanvas(windowWidth*0.8, windowWidth*0.8);
+  canvas = createCanvas(windowHeight*0.8, windowHeight*0.8);
   canvas.class("artwork");
   centerCanvas();
 

@@ -12,7 +12,7 @@ function centerCanvas() {
 }
 
 function setup() {
-  canvas = createCanvas(windowWidth*0.8, windowWidth*0.8);
+  canvas = createCanvas(windowHeight*0.8, windowHeight*0.8);
   canvas.class("artwork");
   centerCanvas();
 
@@ -21,7 +21,7 @@ function setup() {
 
   atom = new Atom(width/2, height/2);
 
-  electronNum = random(50);
+  electronNum = random(10, 50);
   for (let i = 0; i < electronNum; i++){
     electrons[i] = new electron(random(width), random(height));
   }
@@ -39,7 +39,7 @@ function draw() {
   push();
   // fill(255);
   title = createElement('h2', "</a> 3. atom");
-  title.position(windowWidth/2 - 80, 0);
+  title.position(windowWidth/2 - 40, 0);
   pop();
 }
 
