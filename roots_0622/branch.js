@@ -19,7 +19,7 @@ class branch {
     this.pos.add(this.vel);
 
     this.edge();
-    
+
     this.acc.set(0, 0);
   }
 
@@ -34,7 +34,7 @@ class branch {
       this.energy += 5;
     }
 
-    if (this.energy < 5.2 && this.energy > 5 ){
+    if (this.energy < 5.1 && this.energy > 5 ){
       this.makeDivergence = true;
     } else {
       this.makeDivergence = false;
